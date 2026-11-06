@@ -1,0 +1,56 @@
+{
+  "entries": [
+    {
+      "title": "Pre-launch sign-in",
+      "date": "2026-10-09",
+      "version": "1.0.7",
+      "tag": "feature",
+      "body": [
+        "Sign in from a window before the game opens",
+        "Your device is verified before anything loads",
+        "Modules only load once you're authorized"
+      ]
+    },
+    {
+      "title": "Module feedback",
+      "date": "2026-10-08",
+      "version": "1.0.7",
+      "tag": "tweak",
+      "body": [
+        "The client now tells you why a module isn't acting",
+        "No more silent do-nothing toggles"
+      ]
+    },
+    {
+      "title": "Automatic mouse calibration",
+      "date": "2026-10-07",
+      "version": "1.0.6",
+      "tag": "feature",
+      "body": [
+        "Aim timing self-calibrates to your mouse",
+        "Smoother rotations out of the box"
+      ]
+    },
+    {
+      "title": "Config persistence",
+      "date": "2026-10-06",
+      "version": "1.0.6",
+      "tag": "fix",
+      "body": [
+        "Settings reliably save and reload",
+        "Fixed a screen-open bug that disabled every module"
+      ]
+    },
+    {
+      "title": "Pearl family",
+      "date": "2026-10-05",
+      "version": "1.0.5",
+      "tag": "feature",
+      "body": [
+        "Real projectile physics for pearls",
+        "PearlCatch and PearlGrapple added",
+        "Radar: terrain occlusion, held item, closing speed"
+      ]
+    }
+  ]
+}

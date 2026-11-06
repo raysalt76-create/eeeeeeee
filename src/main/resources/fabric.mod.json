@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "combat-hitboxes",
+  "name": "Combat Hitboxes",
+  "version": "1.0.10",
+  "description": "Modifies hitbox rendering to aid with attack timing and gauging your reach visually.",
+  "authors": [
+    "Sootysplash"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/template-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.sootysplash.box.Main"
+    ],
+    "modmenu": [
+      "me.sootysplash.box.ModMenu"
+    ],
+    "client": [
+      "interstellarTikiTiks.apexx.client.Apexx",
+      "interstellarTikiTiks.apexx.client.ApexxClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "minecraft": ">=1.21.11",
+    "java": ">=17",
+    "fabric-api": ">=0.140.0+1.21.11"
+  },
+  "custom": {},
+  "mixins": [
+    {
+      "config": "clumps.client.mixins.json",
+      "environment": "*"
+    },
+    {
+      "config": "combat-hitbox.mixins.json",
+      "environment": "*"
+    }
+  ]
+}

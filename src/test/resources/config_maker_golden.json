@@ -1,0 +1,2707 @@
+{
+  "comment": "Shared golden output for the Config Maker engines (client ConfigMakerEngineTest + website config-maker.test.ts). Regenerate both copies together when config_maker.json changes.",
+  "distinctConfigs": 1620,
+  "cases": [
+    {
+      "answers": {
+        "gamemode": "mace",
+        "playstyle": "balanced",
+        "anticheat": "strict",
+        "aim": "light",
+        "ping": "medium",
+        "aimMode": "normal",
+        "placement": "normal"
+      },
+      "plan": {
+        "name": "Mace - Balanced - Strict",
+        "gameMode": "Mace",
+        "tags": [
+          "Mace",
+          "Legit"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 8,
+              "Re-Totem Delay (ms)": 59,
+              "Danger Reaction (ms)": 39,
+              "Scan Delay (ms)": 33,
+              "Post-Click Delay (ms)": 117,
+              "Quick Pause (ms)": 87,
+              "Hover Assist": true,
+              "Hover Only If No Totem": true,
+              "Hover Delay (ms)": 59,
+              "Hover Swap Delay (ms)": 156,
+              "Hover Close Delay (ms)": 104
+            }
+          },
+          "AimAssist": {
+            "enabled": false,
+            "settings": {
+              "Mode": "Human",
+              "Strength": 35,
+              "Range": 4,
+              "FOV": 70,
+              "Only Weapons": true,
+              "Target Switch (ms)": 195,
+              "Weapon Settle (ms)": 39,
+              "Slowdown": 75
+            }
+          },
+          "AutoMace": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Auto",
+              "Silent Aim": false,
+              "Aim Speed": 44,
+              "Lock-On Wait (ms)": 65,
+              "Post-Hit Delay (ms)": 39,
+              "Swap Back Delay (ms)": 65,
+              "Shield Counter": "Stun Slam",
+              "Wait On Pearl Arrival": true,
+              "Pearl Arrival Wait (ms)": 1300,
+              "Registration Check": true
+            }
+          },
+          "BreachSwap": {
+            "enabled": true,
+            "settings": {
+              "Hit Filter": "Skip Blockers",
+              "Swap Delay (ms)": 4,
+              "Swap Back Delay (ms)": 39
+            }
+          },
+          "PerfectWindcharge": {
+            "enabled": true,
+            "settings": {}
+          },
+          "WebEscape": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": false,
+              "Swap Back": true,
+              "Reaction Delay (ms)": 104
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "settings": {
+              "Silent Aim": false,
+              "Swap Back": true,
+              "Throw Gap (ms)": 13,
+              "Swap Back Delay (ms)": 52
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SafeAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotate": "Legit"
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": false
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": false,
+              "Fire Silent Aim": false
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": false
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SMOOTH"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "mace",
+        "playstyle": "aggressive",
+        "anticheat": "lenient",
+        "aim": "strong",
+        "ping": "high",
+        "aimMode": "silent",
+        "placement": "normal"
+      },
+      "plan": {
+        "name": "Mace - Aggressive - Lenient",
+        "gameMode": "Mace",
+        "tags": [
+          "Mace",
+          "Blatant"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 8,
+              "Re-Totem Delay (ms)": 37,
+              "Danger Reaction (ms)": 19,
+              "Scan Delay (ms)": 16,
+              "Post-Click Delay (ms)": 69,
+              "Quick Pause (ms)": 43,
+              "Hover Assist": true,
+              "Hover Only If No Totem": true,
+              "Hover Delay (ms)": 29,
+              "Hover Swap Delay (ms)": 92,
+              "Hover Close Delay (ms)": 51
+            }
+          },
+          "AimAssist": {
+            "enabled": false,
+            "settings": {
+              "Mode": "Smart Lock",
+              "Strength": 65,
+              "Range": 4,
+              "FOV": 110,
+              "Only Weapons": true,
+              "Target Switch (ms)": 96,
+              "Weapon Settle (ms)": 19,
+              "Slowdown": 80
+            }
+          },
+          "AutoMace": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Auto",
+              "Silent Aim": true,
+              "Aim Speed": 90,
+              "Lock-On Wait (ms)": 48,
+              "Post-Hit Delay (ms)": 19,
+              "Swap Back Delay (ms)": 45,
+              "Shield Counter": "Backstab then Stun Slam",
+              "Wait On Pearl Arrival": true,
+              "Pearl Arrival Wait (ms)": 638,
+              "Registration Check": true
+            }
+          },
+          "BreachSwap": {
+            "enabled": true,
+            "settings": {
+              "Hit Filter": "Skip Blockers",
+              "Swap Delay (ms)": 2,
+              "Swap Back Delay (ms)": 27
+            }
+          },
+          "PerfectWindcharge": {
+            "enabled": true,
+            "settings": {}
+          },
+          "WebEscape": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": false,
+              "Swap Back": true,
+              "Reaction Delay (ms)": 51
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "settings": {
+              "Silent Aim": true,
+              "Swap Back": true,
+              "Throw Gap (ms)": 6,
+              "Swap Back Delay (ms)": 36
+            }
+          },
+          "MaceShieldDrain": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit",
+              "Auto Switch": true,
+              "Swap Delay (ms)": 21,
+              "Swap Back Delay (ms)": 71
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SafeAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotate": "Silent"
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": true
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": false,
+              "Fire Silent Aim": false
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": false
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SMOOTH"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "crystal",
+        "playstyle": "balanced",
+        "anticheat": "normal",
+        "aim": "light",
+        "ping": "medium",
+        "aimMode": "silent",
+        "placement": "normal"
+      },
+      "plan": {
+        "name": "Crystal - Balanced - Normal",
+        "gameMode": "Crystal",
+        "tags": [
+          "Crystal",
+          "Legit"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 10,
+              "Re-Totem Delay (ms)": 45,
+              "Danger Reaction (ms)": 30,
+              "Scan Delay (ms)": 25,
+              "Post-Click Delay (ms)": 90,
+              "Quick Pause (ms)": 67,
+              "Hover Assist": true,
+              "Hover Only If No Totem": true,
+              "Hover Delay (ms)": 45,
+              "Hover Swap Delay (ms)": 120,
+              "Hover Close Delay (ms)": 80
+            }
+          },
+          "AimAssist": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Human",
+              "Strength": 35,
+              "Range": 4,
+              "FOV": 70,
+              "Only Weapons": true,
+              "Target Switch (ms)": 150,
+              "Weapon Settle (ms)": 30,
+              "Slowdown": 75
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": true,
+              "Headbob": true,
+              "Switch Back": true,
+              "Aim Speed": 24,
+              "Crystal Speed": 18,
+              "Place Delay (ms)": 25,
+              "Break Delay (ms)": 20,
+              "Switch Back Delay (ms)": 60
+            }
+          },
+          "SafeAnchor": {
+            "enabled": true,
+            "settings": {
+              "Rotate": "Silent",
+              "Glowstone Shield": true,
+              "Aim Speed": 10,
+              "Charge Delay (ms)": 35,
+              "Shield Delay (ms)": 35,
+              "Explode Delay (ms)": 40
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "settings": {
+              "Silent Aim": true,
+              "Headbob": true,
+              "Aim Speed": 24,
+              "Crystal Speed": 18,
+              "Place Delay (ms)": 25,
+              "Break Delay (ms)": 20,
+              "Bob Break Delay (ms)": 20
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": true
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": false,
+              "Fire Silent Aim": false
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": false
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SMOOTH"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "WebEscape": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "crystal",
+        "playstyle": "aggressive",
+        "anticheat": "normal",
+        "aim": "none",
+        "ping": "low",
+        "aimMode": "normal",
+        "placement": "silent"
+      },
+      "plan": {
+        "name": "Crystal - Aggressive - Normal",
+        "gameMode": "Crystal",
+        "tags": [
+          "Crystal",
+          "Legit"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 10,
+              "Re-Totem Delay (ms)": 30,
+              "Danger Reaction (ms)": 23,
+              "Scan Delay (ms)": 19,
+              "Post-Click Delay (ms)": 68,
+              "Quick Pause (ms)": 50,
+              "Hover Assist": true,
+              "Hover Only If No Totem": true,
+              "Hover Delay (ms)": 34,
+              "Hover Swap Delay (ms)": 90,
+              "Hover Close Delay (ms)": 60
+            }
+          },
+          "AimAssist": {
+            "enabled": false,
+            "settings": {
+              "Mode": "Human",
+              "Strength": 45,
+              "Range": 4,
+              "FOV": 90,
+              "Only Weapons": true,
+              "Target Switch (ms)": 113,
+              "Weapon Settle (ms)": 23
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": false,
+              "Headbob": true,
+              "Switch Back": true,
+              "Aim Speed": 34,
+              "Crystal Speed": 18,
+              "Place Delay (ms)": 19,
+              "Break Delay (ms)": 15,
+              "Switch Back Delay (ms)": 45
+            }
+          },
+          "SafeAnchor": {
+            "enabled": true,
+            "settings": {
+              "Rotate": "Legit",
+              "Glowstone Shield": true,
+              "Aim Speed": 12,
+              "Charge Delay (ms)": 26,
+              "Shield Delay (ms)": 26,
+              "Explode Delay (ms)": 30
+            }
+          },
+          "AutoCrystal": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": false,
+              "Headbob": true,
+              "Aim Speed": 34,
+              "Crystal Speed": 18,
+              "Place Delay (ms)": 19,
+              "Break Delay (ms)": 15,
+              "Bob Break Delay (ms)": 15
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": false
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": true,
+              "Fire Silent Aim": true
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": true
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SILENT"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "WebEscape": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "crystal",
+        "playstyle": "legit",
+        "anticheat": "strict",
+        "aim": "strong",
+        "ping": "high",
+        "aimMode": "silent",
+        "placement": "silent"
+      },
+      "plan": {
+        "name": "Crystal - Legit - Strict",
+        "gameMode": "Crystal",
+        "tags": [
+          "Crystal",
+          "Legit"
+        ],
+        "warnings": [
+          "Silent rotations are riskier on strict anticheats.",
+          "Silent block placement is riskier on strict anticheats."
+        ],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 10,
+              "Re-Totem Delay (ms)": 95,
+              "Danger Reaction (ms)": 49,
+              "Scan Delay (ms)": 41,
+              "Post-Click Delay (ms)": 176,
+              "Quick Pause (ms)": 109,
+              "Hover Assist": true,
+              "Hover Only If No Totem": true,
+              "Hover Delay (ms)": 73,
+              "Hover Swap Delay (ms)": 234,
+              "Hover Close Delay (ms)": 130
+            }
+          },
+          "AimAssist": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Human",
+              "Strength": 65,
+              "Range": 4,
+              "FOV": 110,
+              "Only Weapons": true,
+              "Target Switch (ms)": 244,
+              "Weapon Settle (ms)": 49,
+              "Slowdown": 80
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": true,
+              "Headbob": true,
+              "Switch Back": true,
+              "Aim Speed": 21,
+              "Crystal Speed": 18,
+              "Place Delay (ms)": 41,
+              "Break Delay (ms)": 33,
+              "Switch Back Delay (ms)": 137
+            }
+          },
+          "SafeAnchor": {
+            "enabled": true,
+            "settings": {
+              "Rotate": "Silent",
+              "Glowstone Shield": true,
+              "Aim Speed": 6,
+              "Charge Delay (ms)": 57,
+              "Shield Delay (ms)": 57,
+              "Explode Delay (ms)": 65
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "settings": {
+              "Silent Aim": true,
+              "Headbob": true,
+              "Aim Speed": 21,
+              "Crystal Speed": 18,
+              "Place Delay (ms)": 41,
+              "Break Delay (ms)": 33,
+              "Bob Break Delay (ms)": 33
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": true
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": true,
+              "Fire Silent Aim": true
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": true
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SILENT"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "WebEscape": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "sword",
+        "playstyle": "legit",
+        "anticheat": "strict",
+        "aim": "none",
+        "ping": "medium",
+        "aimMode": "normal",
+        "placement": "normal"
+      },
+      "plan": {
+        "name": "Sword - Legit - Strict",
+        "gameMode": "Sword",
+        "tags": [
+          "Sword",
+          "Legit"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 8,
+              "Re-Totem Delay (ms)": 73,
+              "Danger Reaction (ms)": 49,
+              "Scan Delay (ms)": 41,
+              "Post-Click Delay (ms)": 146,
+              "Quick Pause (ms)": 109,
+              "Hover Assist": false
+            }
+          },
+          "AimAssist": {
+            "enabled": false,
+            "settings": {
+              "Mode": "Human",
+              "Strength": 45,
+              "Range": 4,
+              "FOV": 90,
+              "Only Weapons": true,
+              "Target Switch (ms)": 244,
+              "Weapon Settle (ms)": 49
+            }
+          },
+          "SmartWTap": {
+            "enabled": true,
+            "settings": {
+              "Reset Style": "Release",
+              "Reset Length (ms)": 81,
+              "Start Lag (ms)": 49
+            }
+          },
+          "AutoJumpReset": {
+            "enabled": true,
+            "settings": {
+              "Only Sprint": true,
+              "Miss Chance %": 20
+            }
+          },
+          "HitSelect": {
+            "enabled": true,
+            "settings": {
+              "Hold Rule": "I-Frames",
+              "Engage Odds %": 75,
+              "Release Delay (ms)": 49
+            }
+          },
+          "AutoShieldBreak": {
+            "enabled": true,
+            "settings": {
+              "Trigger": "On Swing",
+              "Facing": "Off",
+              "Swap Back": true,
+              "Swap Wait (ms)": 33,
+              "Swap Back Delay (ms)": 81
+            }
+          },
+          "TriggerBot": {
+            "enabled": false,
+            "settings": {
+              "Sprint Hits Only": true,
+              "Weapon Only": true,
+              "Crit Timing": "Locked",
+              "Engage Filter": "Players",
+              "Acquire Delay (ms)": 49,
+              "Extra Hit Gap (ms)": 24
+            }
+          },
+          "AntiMiss": {
+            "enabled": false,
+            "settings": {
+              "Weapon Only": true,
+              "Hit Chance %": 100
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SafeAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotate": "Legit"
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": false
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": false,
+              "Fire Silent Aim": false
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": false
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SMOOTH"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "WebEscape": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "sword",
+        "playstyle": "aggressive",
+        "anticheat": "lenient",
+        "aim": "strong",
+        "ping": "low",
+        "aimMode": "silent",
+        "placement": "silent"
+      },
+      "plan": {
+        "name": "Sword - Aggressive - Lenient",
+        "gameMode": "Sword",
+        "tags": [
+          "Sword",
+          "Blatant"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 8,
+              "Re-Totem Delay (ms)": 26,
+              "Danger Reaction (ms)": 19,
+              "Scan Delay (ms)": 16,
+              "Post-Click Delay (ms)": 57,
+              "Quick Pause (ms)": 43,
+              "Hover Assist": false
+            }
+          },
+          "AimAssist": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Smart Lock",
+              "Strength": 65,
+              "Range": 4,
+              "FOV": 110,
+              "Only Weapons": true,
+              "Target Switch (ms)": 96,
+              "Weapon Settle (ms)": 19,
+              "Slowdown": 80
+            }
+          },
+          "SmartWTap": {
+            "enabled": true,
+            "settings": {
+              "Reset Style": "Release",
+              "Reset Length (ms)": 32,
+              "Start Lag (ms)": 19
+            }
+          },
+          "AutoJumpReset": {
+            "enabled": true,
+            "settings": {
+              "Only Sprint": true,
+              "Miss Chance %": 5
+            }
+          },
+          "HitSelect": {
+            "enabled": true,
+            "settings": {
+              "Hold Rule": "I-Frames",
+              "Engage Odds %": 100,
+              "Release Delay (ms)": 19
+            }
+          },
+          "AutoShieldBreak": {
+            "enabled": true,
+            "settings": {
+              "Trigger": "On Swing",
+              "Facing": "Off",
+              "Swap Back": true,
+              "Swap Wait (ms)": 13,
+              "Swap Back Delay (ms)": 29
+            }
+          },
+          "TriggerBot": {
+            "enabled": true,
+            "settings": {
+              "Sprint Hits Only": true,
+              "Weapon Only": true,
+              "Crit Timing": "Locked",
+              "Engage Filter": "Players",
+              "Acquire Delay (ms)": 19,
+              "Extra Hit Gap (ms)": 10
+            }
+          },
+          "AntiMiss": {
+            "enabled": true,
+            "settings": {
+              "Weapon Only": true,
+              "Hit Chance %": 100
+            }
+          },
+          "Backtrack": {
+            "enabled": true,
+            "settings": {
+              "Only Moving Away": true,
+              "Min Latency (ms)": 43,
+              "Max Latency (ms)": 85
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SafeAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotate": "Silent"
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": true
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": true,
+              "Fire Silent Aim": true
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": true
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SILENT"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "WebEscape": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "smp",
+        "playstyle": "balanced",
+        "anticheat": "normal",
+        "aim": "strong",
+        "ping": "high",
+        "aimMode": "normal",
+        "placement": "normal"
+      },
+      "plan": {
+        "name": "SMP - Balanced - Normal",
+        "gameMode": "SMP",
+        "tags": [
+          "SMP",
+          "Legit"
+        ],
+        "warnings": [],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 8,
+              "Re-Totem Delay (ms)": 59,
+              "Danger Reaction (ms)": 30,
+              "Scan Delay (ms)": 25,
+              "Post-Click Delay (ms)": 108,
+              "Quick Pause (ms)": 67,
+              "Hover Assist": false
+            }
+          },
+          "AimAssist": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Smart Lock",
+              "Strength": 65,
+              "Range": 4,
+              "FOV": 110,
+              "Only Weapons": true,
+              "Target Switch (ms)": 150,
+              "Weapon Settle (ms)": 30,
+              "Slowdown": 80
+            }
+          },
+          "SmartWTap": {
+            "enabled": true,
+            "settings": {
+              "Reset Style": "Release",
+              "Reset Length (ms)": 50,
+              "Start Lag (ms)": 30
+            }
+          },
+          "AutoJumpReset": {
+            "enabled": true,
+            "settings": {
+              "Only Sprint": true,
+              "Miss Chance %": 13
+            }
+          },
+          "HitSelect": {
+            "enabled": true,
+            "settings": {
+              "Hold Rule": "I-Frames",
+              "Engage Odds %": 90,
+              "Release Delay (ms)": 30
+            }
+          },
+          "AutoShieldBreak": {
+            "enabled": true,
+            "settings": {
+              "Trigger": "On Swing",
+              "Facing": "Off",
+              "Swap Back": true,
+              "Swap Wait (ms)": 20,
+              "Swap Back Delay (ms)": 70
+            }
+          },
+          "AutoEat": {
+            "enabled": true,
+            "settings": {
+              "Out Of Combat Only": true,
+              "Avoid Harmful Food": true,
+              "Reaction Delay (ms)": 150,
+              "Swap Back Delay (ms)": 168
+            }
+          },
+          "StaffDetector": {
+            "enabled": true,
+            "settings": {
+              "Sound": true,
+              "Scan Delay (ms)": 1000
+            }
+          },
+          "VisualRange": {
+            "enabled": true,
+            "settings": {
+              "Ignore Friends": true,
+              "Sound": true
+            }
+          },
+          "BaseFinder": {
+            "enabled": true,
+            "settings": {}
+          },
+          "WebEscape": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": false,
+              "Swap Back": true,
+              "Reaction Delay (ms)": 80
+            }
+          },
+          "TriggerBot": {
+            "enabled": true,
+            "settings": {
+              "Sprint Hits Only": true,
+              "Weapon Only": true,
+              "Crit Timing": "Locked",
+              "Engage Filter": "Players",
+              "Acquire Delay (ms)": 36,
+              "Extra Hit Gap (ms)": 15
+            }
+          },
+          "AntiMiss": {
+            "enabled": true,
+            "settings": {
+              "Weapon Only": true,
+              "Hit Chance %": 100
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SafeAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotate": "Legit"
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": false
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoWeb": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "AutoWater": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "Clutch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotations": false,
+              "Fire Silent Aim": false
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": false
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Smooth"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SMOOTH"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Legit"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Client"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "gamemode": "uhc",
+        "playstyle": "aggressive",
+        "anticheat": "strict",
+        "aim": "light",
+        "ping": "medium",
+        "aimMode": "silent",
+        "placement": "silent"
+      },
+      "plan": {
+        "name": "UHC - Aggressive - Strict",
+        "gameMode": "UHC",
+        "tags": [
+          "Sword",
+          "Legit"
+        ],
+        "warnings": [
+          "Silent rotations are riskier on strict anticheats.",
+          "Silent block placement is riskier on strict anticheats."
+        ],
+        "modules": {
+          "AutoSprint": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Legit"
+            }
+          },
+          "AntiBot": {
+            "enabled": true,
+            "settings": {}
+          },
+          "AutoTotem": {
+            "enabled": true,
+            "settings": {
+              "Refill Route": "Auto",
+              "Allow Silent": false,
+              "Manage Inventory": true,
+              "Fall Back To Visible": true,
+              "Danger Health": 8,
+              "Re-Totem Delay (ms)": 44,
+              "Danger Reaction (ms)": 29,
+              "Scan Delay (ms)": 24,
+              "Post-Click Delay (ms)": 88,
+              "Quick Pause (ms)": 65,
+              "Hover Assist": false
+            }
+          },
+          "AimAssist": {
+            "enabled": true,
+            "settings": {
+              "Mode": "Human",
+              "Strength": 35,
+              "Range": 4,
+              "FOV": 70,
+              "Only Weapons": true,
+              "Target Switch (ms)": 146,
+              "Weapon Settle (ms)": 29,
+              "Slowdown": 75
+            }
+          },
+          "SmartWTap": {
+            "enabled": true,
+            "settings": {
+              "Reset Style": "Release",
+              "Reset Length (ms)": 49,
+              "Start Lag (ms)": 29
+            }
+          },
+          "AutoJumpReset": {
+            "enabled": true,
+            "settings": {
+              "Only Sprint": true,
+              "Miss Chance %": 5
+            }
+          },
+          "HitSelect": {
+            "enabled": true,
+            "settings": {
+              "Hold Rule": "I-Frames",
+              "Engage Odds %": 100,
+              "Release Delay (ms)": 29
+            }
+          },
+          "AutoShieldBreak": {
+            "enabled": true,
+            "settings": {
+              "Trigger": "On Swing",
+              "Facing": "Off",
+              "Swap Back": true,
+              "Swap Wait (ms)": 20,
+              "Swap Back Delay (ms)": 49
+            }
+          },
+          "Clutch": {
+            "enabled": true,
+            "settings": {
+              "Fall Method": "MLG",
+              "Silent Rotations": true,
+              "MLG Swap Delay (ms)": 20,
+              "Retract Delay (ms)": 29,
+              "Trigger on Fire": true,
+              "Fire Silent Aim": true,
+              "Auto Retract": true,
+              "Fire Reaction Delay (ms)": 117,
+              "Fire Pickup Delay (ms)": 117
+            }
+          },
+          "WebEscape": {
+            "enabled": true,
+            "settings": {
+              "Silent Aim": true,
+              "Swap Back": true,
+              "Reaction Delay (ms)": 78
+            }
+          },
+          "TriggerBot": {
+            "enabled": false,
+            "settings": {
+              "Sprint Hits Only": true,
+              "Weapon Only": true,
+              "Crit Timing": "Locked",
+              "Engage Filter": "Players",
+              "Acquire Delay (ms)": 29,
+              "Extra Hit Gap (ms)": 15
+            }
+          },
+          "AntiMiss": {
+            "enabled": true,
+            "settings": {
+              "Weapon Only": true,
+              "Hit Chance %": 100
+            }
+          },
+          "AutoWeb": {
+            "enabled": true,
+            "settings": {
+              "Trigger": "On Hit",
+              "Rotation": "Silent",
+              "Weapons Only": true,
+              "Swap Back": true,
+              "Aim Strength": 50,
+              "Reaction Delay (ms)": 49,
+              "Swap Back Delay (ms)": 49
+            }
+          },
+          "AutoWater": {
+            "enabled": true,
+            "settings": {
+              "Rotation Mode": "Silent",
+              "Use Timing Profile": false,
+              "Swap Delay (ms)": 15,
+              "Swap Back Delay (ms)": 98,
+              "Place Interval (ms)": 215
+            }
+          },
+          "AutoMace": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHitCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoCrystal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SafeAnchor": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotate": "Silent"
+            }
+          },
+          "BowAimbot": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent": true
+            }
+          },
+          "PearlCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlDisrupter": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlGrapple": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "ChompzaInstaCatch": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "PearlChase": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "MaceDoubleTap": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoHeal": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "KnockbackDisplacement": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "SpearAssist": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "Scaffold": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Rotation": true
+            }
+          },
+          "AutoBuild": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "CartBlocker": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation": "Silent"
+            }
+          },
+          "FastCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "SILENT"
+            }
+          },
+          "AutoCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "AutoXBowCart": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "XBowCartProtection": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Rotation Mode": "Silent"
+            }
+          },
+          "LavaMacro": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          },
+          "AutoDrain": {
+            "enabled": false,
+            "listed": false,
+            "settings": {
+              "Silent Aim": true
+            }
+          }
+        }
+      }
+    }
+  ]
+}

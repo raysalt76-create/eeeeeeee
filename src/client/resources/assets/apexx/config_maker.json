@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "comment": "Config Maker rules. Shared verbatim with the website (src/data/configMaker.json); both engines apply: common, gamemode, playstyle, anticheat, aim, ping, aimMode, placement, then warnings, the safety pass and range clamping. Steps: enable/disable (module list), set (module -> setting -> value), scale (numeric settings already in the plan whose name contains 'match', optional 'modules' filter), assign (every plan setting named exactly 'match'). prefer (like set, but a module that only appears in prefer steps stays out of the preview unless it is enabled). A step with 'when' runs only if every listed answer matches.",
+  "questions": [
+    {"id": "gamemode", "title": "Gamemode", "options": [
+      {"id": "mace", "label": "Mace"},
+      {"id": "crystal", "label": "Crystal (CPvP)"},
+      {"id": "sword", "label": "Sword"},
+      {"id": "smp", "label": "SMP / Donut"},
+      {"id": "uhc", "label": "UHC"}
+    ]},
+    {"id": "playstyle", "title": "Playstyle", "options": [
+      {"id": "legit", "label": "Legit"},
+      {"id": "balanced", "label": "Balanced"},
+      {"id": "aggressive", "label": "Aggressive"}
+    ]},
+    {"id": "anticheat", "title": "Server anticheat", "options": [
+      {"id": "strict", "label": "Strict (Grim/Vulcan/Intave)"},
+      {"id": "normal", "label": "Normal"},
+      {"id": "lenient", "label": "Lenient / none"}
+    ]},
+    {"id": "aim", "title": "Aim help", "options": [
+      {"id": "none", "label": "None"},
+      {"id": "light", "label": "Light"},
+      {"id": "strong", "label": "Strong"}
+    ]},
+    {"id": "ping", "title": "Your ping", "options": [
+      {"id": "low", "label": "Low (<50 ms)"},
+      {"id": "medium", "label": "Medium (50-120 ms)"},
+      {"id": "high", "label": "High (120+ ms)"}
+    ]},
+    {"id": "aimMode", "title": "Aim", "options": [
+      {"id": "normal", "label": "Normal (visible camera turns)"},
+      {"id": "silent", "label": "Silent (server-side rotation only)"}
+    ]},
+    {"id": "placement", "title": "Block placement", "options": [
+      {"id": "normal", "label": "Normal"},
+      {"id": "silent", "label": "Silent"}
+    ]}
+  ],
+  "naming": {
+    "gamemode": {"mace": "Mace", "crystal": "Crystal", "sword": "Sword", "smp": "SMP", "uhc": "UHC"},
+    "playstyle": {"legit": "Legit", "balanced": "Balanced", "aggressive": "Aggressive"},
+    "anticheat": {"strict": "Strict", "normal": "Normal", "lenient": "Lenient"}
+  },
+  "hubMode": {"mace": "Mace", "crystal": "Crystal", "sword": "Sword", "smp": "SMP", "uhc": "UHC"},
+  "tags": {"mace": ["Mace"], "crystal": ["Crystal"], "sword": ["Sword"], "smp": ["SMP"], "uhc": ["Sword"]},
+  "common": [
+    {"enable": ["AutoSprint", "AntiBot", "AutoTotem"]},
+    {"set": {
+      "AutoSprint": {"Mode": "Legit"},
+      "AutoTotem": {"Refill Route": "Auto", "Allow Silent": false, "Manage Inventory": true, "Fall Back To Visible": true,
+        "Danger Health": 8, "Re-Totem Delay (ms)": 45, "Danger Reaction (ms)": 30, "Scan Delay (ms)": 25,
+        "Post-Click Delay (ms)": 90, "Quick Pause (ms)": 67, "Hover Assist": false},
+      "AimAssist": {"Mode": "Human", "Strength": 45, "Range": 4.0, "FOV": 90, "Only Weapons": true,
+        "Target Switch (ms)": 150, "Weapon Settle (ms)": 30}
+    }}
+  ],
+  "gamemodes": {
+    "mace": [
+      {"enable": ["AutoMace", "BreachSwap", "PerfectWindcharge", "WebEscape"]},
+      {"set": {
+        "AutoMace": {"Mode": "Auto", "Silent Aim": false, "Aim Speed": 65, "Lock-On Wait (ms)": 50,
+          "Post-Hit Delay (ms)": 30, "Swap Back Delay (ms)": 50, "Shield Counter": "Stun Slam",
+          "Wait On Pearl Arrival": true, "Pearl Arrival Wait (ms)": 1000, "Registration Check": true},
+        "BreachSwap": {"Hit Filter": "Skip Blockers", "Swap Delay (ms)": 3, "Swap Back Delay (ms)": 30},
+        "PearlCatch": {"Silent Aim": false, "Swap Back": true, "Throw Gap (ms)": 10, "Swap Back Delay (ms)": 40},
+        "WebEscape": {"Silent Aim": false, "Swap Back": true, "Reaction Delay (ms)": 80},
+        "AutoTotem": {"Hover Assist": true, "Hover Only If No Totem": true, "Hover Delay (ms)": 45,
+          "Hover Swap Delay (ms)": 120, "Hover Close Delay (ms)": 80}
+      }}
+    ],
+    "crystal": [
+      {"enable": ["AutoHitCrystal", "SafeAnchor"]},
+      {"set": {"AutoTotem": {"Danger Health": 10}}},
+      {"set": {
+        "AutoHitCrystal": {"Silent Aim": false, "Headbob": true, "Switch Back": true, "Aim Speed": 28,
+          "Crystal Speed": 18, "Place Delay (ms)": 25, "Break Delay (ms)": 20, "Switch Back Delay (ms)": 60},
+        "AutoCrystal": {"Silent Aim": false, "Headbob": true, "Aim Speed": 28, "Crystal Speed": 18,
+          "Place Delay (ms)": 25, "Break Delay (ms)": 20, "Bob Break Delay (ms)": 20},
+        "SafeAnchor": {"Rotate": "Legit", "Glowstone Shield": true, "Aim Speed": 10,
+          "Charge Delay (ms)": 35, "Shield Delay (ms)": 35, "Explode Delay (ms)": 40},
+        "AutoTotem": {"Hover Assist": true, "Hover Only If No Totem": true, "Hover Delay (ms)": 45,
+          "Hover Swap Delay (ms)": 120, "Hover Close Delay (ms)": 80}
+      }}
+    ],
+    "sword": [
+      {"enable": ["SmartWTap", "AutoJumpReset", "HitSelect", "AutoShieldBreak"]},
+      {"set": {
+        "SmartWTap": {"Reset Style": "Release", "Reset Length (ms)": 50, "Start Lag (ms)": 30},
+        "AutoJumpReset": {"Only Sprint": true, "Miss Chance %": 13},
+        "HitSelect": {"Hold Rule": "I-Frames", "Engage Odds %": 90, "Release Delay (ms)": 30},
+        "AutoShieldBreak": {"Trigger": "On Swing", "Facing": "Off", "Swap Back": true,
+          "Swap Wait (ms)": 20, "Swap Back Delay (ms)": 50},
+        "TriggerBot": {"Sprint Hits Only": true, "Weapon Only": true, "Crit Timing": "Locked",
+          "Engage Filter": "Players", "Acquire Delay (ms)": 30, "Extra Hit Gap (ms)": 15},
+        "AntiMiss": {"Weapon Only": true, "Hit Chance %": 100}
+      }}
+    ],
+    "smp": [
+      {"enable": ["SmartWTap", "AutoJumpReset", "HitSelect", "AutoShieldBreak", "AutoEat", "StaffDetector",
+        "VisualRange", "BaseFinder", "WebEscape"]},
+      {"set": {
+        "SmartWTap": {"Reset Style": "Release", "Reset Length (ms)": 50, "Start Lag (ms)": 30},
+        "AutoJumpReset": {"Only Sprint": true, "Miss Chance %": 13},
+        "HitSelect": {"Hold Rule": "I-Frames", "Engage Odds %": 90, "Release Delay (ms)": 30},
+        "AutoShieldBreak": {"Trigger": "On Swing", "Facing": "Off", "Swap Back": true,
+          "Swap Wait (ms)": 20, "Swap Back Delay (ms)": 50},
+        "TriggerBot": {"Sprint Hits Only": true, "Weapon Only": true, "Crit Timing": "Locked",
+          "Engage Filter": "Players", "Acquire Delay (ms)": 30, "Extra Hit Gap (ms)": 15},
+        "AntiMiss": {"Weapon Only": true, "Hit Chance %": 100},
+        "AutoEat": {"Out Of Combat Only": true, "Avoid Harmful Food": true, "Reaction Delay (ms)": 150,
+          "Swap Back Delay (ms)": 120},
+        "StaffDetector": {"Sound": true, "Scan Delay (ms)": 1000},
+        "VisualRange": {"Ignore Friends": true, "Sound": true},
+        "WebEscape": {"Silent Aim": false, "Swap Back": true, "Reaction Delay (ms)": 80}
+      }}
+    ],
+    "uhc": [
+      {"enable": ["SmartWTap", "AutoJumpReset", "HitSelect", "AutoShieldBreak", "Clutch", "WebEscape"]},
+      {"set": {
+        "SmartWTap": {"Reset Style": "Release", "Reset Length (ms)": 50, "Start Lag (ms)": 30},
+        "AutoJumpReset": {"Only Sprint": true, "Miss Chance %": 13},
+        "HitSelect": {"Hold Rule": "I-Frames", "Engage Odds %": 90, "Release Delay (ms)": 30},
+        "AutoShieldBreak": {"Trigger": "On Swing", "Facing": "Off", "Swap Back": true,
+          "Swap Wait (ms)": 20, "Swap Back Delay (ms)": 50},
+        "TriggerBot": {"Sprint Hits Only": true, "Weapon Only": true, "Crit Timing": "Locked",
+          "Engage Filter": "Players", "Acquire Delay (ms)": 30, "Extra Hit Gap (ms)": 15},
+        "AntiMiss": {"Weapon Only": true, "Hit Chance %": 100},
+        "AutoWeb": {"Trigger": "On Hit", "Rotation": "Smooth", "Weapons Only": true, "Swap Back": true,
+          "Aim Strength": 50, "Reaction Delay (ms)": 50, "Swap Back Delay (ms)": 50},
+        "AutoWater": {"Rotation Mode": "Legit", "Use Timing Profile": false, "Swap Delay (ms)": 15,
+          "Swap Back Delay (ms)": 100, "Place Interval (ms)": 220},
+        "Clutch": {"Fall Method": "MLG", "Silent Rotations": false, "MLG Swap Delay (ms)": 20,
+          "Retract Delay (ms)": 30, "Trigger on Fire": true, "Fire Silent Aim": false, "Auto Retract": true,
+          "Fire Reaction Delay (ms)": 120, "Fire Pickup Delay (ms)": 120},
+        "WebEscape": {"Silent Aim": false, "Swap Back": true, "Reaction Delay (ms)": 80}
+      }}
+    ]
+  },
+  "playstyle": {
+    "legit": [
+      {"scale": {"match": "(ms)", "factor": 1.25}},
+      {"scale": {"match": "Aim Speed", "factor": 0.8}},
+      {"set": {"AutoJumpReset": {"Miss Chance %": 20}, "HitSelect": {"Engage Odds %": 75}}, "when": {"gamemode": ["sword", "smp", "uhc"]}}
+    ],
+    "balanced": [
+      {"enable": ["AntiMiss"], "when": {"gamemode": ["sword", "smp", "uhc"]}},
+      {"enable": ["AutoWeb"], "when": {"gamemode": ["uhc"]}}
+    ],
+    "aggressive": [
+      {"scale": {"match": "(ms)", "factor": 0.75}},
+      {"scale": {"match": "Aim Speed", "factor": 1.2}},
+      {"set": {"AutoJumpReset": {"Miss Chance %": 5}, "HitSelect": {"Engage Odds %": 100}},
+        "when": {"gamemode": ["sword", "smp", "uhc"]}},
+      {"set": {"AutoMace": {"Shield Counter": "Backstab then Stun Slam"}}, "when": {"gamemode": ["mace"]}},
+      {"enable": ["AntiMiss"], "when": {"gamemode": ["sword", "smp", "uhc"]}},
+      {"enable": ["AutoWeb", "AutoWater"], "when": {"gamemode": ["uhc"]}},
+      {"enable": ["AutoCrystal"], "when": {"gamemode": ["crystal"]}},
+      {"enable": ["MaceShieldDrain"], "when": {"gamemode": ["mace"], "anticheat": ["lenient"]}},
+      {"set": {"MaceShieldDrain": {"Mode": "Legit", "Auto Switch": true, "Swap Delay (ms)": 25,
+        "Swap Back Delay (ms)": 60}}, "when": {"gamemode": ["mace"], "anticheat": ["lenient"]}},
+      {"enable": ["Backtrack"], "when": {"gamemode": ["sword", "smp", "uhc"], "anticheat": ["lenient"]}},
+      {"set": {"Backtrack": {"Only Moving Away": true, "Min Latency (ms)": 50, "Max Latency (ms)": 100}},
+        "when": {"gamemode": ["sword", "smp", "uhc"], "anticheat": ["lenient"]}}
+    ]
+  },
+  "anticheat": {
+    "strict": [
+      {"scale": {"match": "(ms)", "factor": 1.3}},
+      {"scale": {"match": "Aim Speed", "factor": 0.8}},
+      {"disable": ["AutoCrystal"]},
+      {"set": {"SafeAnchor": {"Rotate": "Legit"}, "AutoHitCrystal": {"Headbob": true}}, "when": {"gamemode": ["crystal"]}}
+    ],
+    "normal": [],
+    "lenient": [
+      {"scale": {"match": "(ms)", "factor": 0.85}}
+    ]
+  },
+  "aim": {
+    "none": [
+      {"disable": ["AimAssist", "TriggerBot"]},
+      {"set": {"AutoMace": {"Mode": "Hit Only"}}, "when": {"gamemode": ["mace"]}}
+    ],
+    "light": [
+      {"enable": ["AimAssist"], "when": {"gamemode": ["crystal", "sword", "smp", "uhc"]}},
+      {"set": {"AimAssist": {"Strength": 35, "Slowdown": 75, "FOV": 70}}},
+      {"scale": {"modules": ["AutoMace", "AutoHitCrystal", "AutoCrystal"], "match": "Aim Speed", "factor": 0.85}}
+    ],
+    "strong": [
+      {"enable": ["AimAssist"], "when": {"gamemode": ["crystal", "sword", "smp", "uhc"]}},
+      {"enable": ["TriggerBot"], "when": {"gamemode": ["sword", "smp", "uhc"]}},
+      {"set": {"AimAssist": {"Strength": 65, "Slowdown": 80, "FOV": 110}}},
+      {"set": {"AimAssist": {"Mode": "Smart Lock"}}, "when": {"anticheat": ["normal", "lenient"]}},
+      {"scale": {"modules": ["AutoMace", "AutoHitCrystal", "AutoCrystal"], "match": "Aim Speed", "factor": 1.15}}
+    ]
+  },
+  "ping": {
+    "low": [
+      {"scale": {"modules": ["AutoTotem"], "match": "Re-Totem Delay", "factor": 0.9}},
+      {"scale": {"match": "Swap Back Delay", "factor": 0.9}}
+    ],
+    "medium": [],
+    "high": [
+      {"scale": {"match": "Swap Back Delay", "factor": 1.4}},
+      {"scale": {"modules": ["AutoHitCrystal"], "match": "Switch Back Delay", "factor": 1.4}},
+      {"scale": {"modules": ["AutoMace"], "match": "Lock-On Wait", "factor": 1.5}},
+      {"scale": {"modules": ["TriggerBot"], "match": "Acquire Delay", "factor": 1.2}},
+      {"scale": {"modules": ["AutoTotem"], "match": "Re-Totem Delay", "factor": 1.3}},
+      {"scale": {"modules": ["AutoTotem"], "match": "Post-Click Delay", "factor": 1.2}},
+      {"scale": {"modules": ["AutoTotem"], "match": "Hover Swap Delay", "factor": 1.2}}
+    ]
+  },
+  "aimMode": {
+    "normal": [
+      {"prefer": {
+        "AutoMace": {"Silent Aim": false},
+        "AutoHitCrystal": {"Silent Aim": false},
+        "AutoCrystal": {"Silent Aim": false},
+        "AutoAnchor": {"Silent Aim": false},
+        "SafeAnchor": {"Rotate": "Legit"},
+        "BowAimbot": {"Silent": false},
+        "PearlCatch": {"Silent Aim": false},
+        "PearlDisrupter": {"Silent Aim": false},
+        "PearlGrapple": {"Silent Aim": false},
+        "ChompzaInstaCatch": {"Silent Aim": false},
+        "PearlChase": {"Rotation Mode": "Client"},
+        "MaceDoubleTap": {"Silent Aim": false},
+        "AutoHeal": {"Silent Aim": false},
+        "KnockbackDisplacement": {"Silent Aim": false},
+        "SpearAssist": {"Silent Aim": false}
+      }}
+    ],
+    "silent": [
+      {"prefer": {
+        "AutoMace": {"Silent Aim": true},
+        "AutoHitCrystal": {"Silent Aim": true},
+        "AutoCrystal": {"Silent Aim": true},
+        "AutoAnchor": {"Silent Aim": true},
+        "SafeAnchor": {"Rotate": "Silent"},
+        "BowAimbot": {"Silent": true},
+        "PearlCatch": {"Silent Aim": true},
+        "PearlDisrupter": {"Silent Aim": true},
+        "PearlGrapple": {"Silent Aim": true},
+        "ChompzaInstaCatch": {"Silent Aim": true},
+        "PearlChase": {"Rotation Mode": "Silent"},
+        "MaceDoubleTap": {"Silent Aim": true},
+        "AutoHeal": {"Silent Aim": true},
+        "KnockbackDisplacement": {"Silent Aim": true},
+        "SpearAssist": {"Silent Aim": true}
+      }}
+    ]
+  },
+  "placement": {
+    "normal": [
+      {"prefer": {
+        "AutoWeb": {"Rotation": "Smooth"},
+        "AutoWater": {"Rotation Mode": "Legit"},
+        "Clutch": {"Silent Rotations": false, "Fire Silent Aim": false},
+        "Scaffold": {"Silent Rotation": false},
+        "AutoBuild": {"Silent Aim": false},
+        "CartBlocker": {"Rotation": "Smooth"},
+        "FastCart": {"Rotation Mode": "SMOOTH"},
+        "AutoCart": {"Rotation Mode": "Legit"},
+        "AutoXBowCart": {"Rotation Mode": "Legit"},
+        "XBowCartProtection": {"Rotation Mode": "Client"},
+        "LavaMacro": {"Silent Aim": false},
+        "WebEscape": {"Silent Aim": false},
+        "AutoDrain": {"Silent Aim": false}
+      }}
+    ],
+    "silent": [
+      {"prefer": {
+        "AutoWeb": {"Rotation": "Silent"},
+        "AutoWater": {"Rotation Mode": "Silent"},
+        "Clutch": {"Silent Rotations": true, "Fire Silent Aim": true},
+        "Scaffold": {"Silent Rotation": true},
+        "AutoBuild": {"Silent Aim": true},
+        "CartBlocker": {"Rotation": "Silent"},
+        "FastCart": {"Rotation Mode": "SILENT"},
+        "AutoCart": {"Rotation Mode": "Silent"},
+        "AutoXBowCart": {"Rotation Mode": "Silent"},
+        "XBowCartProtection": {"Rotation Mode": "Silent"},
+        "LavaMacro": {"Silent Aim": true},
+        "WebEscape": {"Silent Aim": true},
+        "AutoDrain": {"Silent Aim": true}
+      }}
+    ]
+  },
+  "warnings": [
+    {"when": {"anticheat": ["strict"], "aimMode": ["silent"]}, "text": "Silent rotations are riskier on strict anticheats."},
+    {"when": {"anticheat": ["strict"], "placement": ["silent"]}, "text": "Silent block placement is riskier on strict anticheats."}
+  ],
+  "safety": {
+    "neverEnable": ["SelfDestruct", "ClickGUI", "HUD Editor", "ConfigBind", "Nick", "Freecam", "AutoWalk",
+      "AntiAFK", "LavaMacro", "PearlCatch", "PearlGrapple", "PearlDisrupter", "ChompzaInstaCatch",
+      "AlienHighCharge", "AutoXBowCart", "ElytraSwap", "AutoLunge", "AutoPearl", "AutoGapple", "AutoShield"],
+    "blatant": ["Backtrack", "MaceShieldDrain", "SwordAura", "PlayerFreeze", "InstantLunge", "Fakelag",
+      "FastPlace", "InventoryMove", "NoBreakDelay", "AntiTranslation", "Flight", "Speed"],
+    "blatantAllowedWhen": {"playstyle": ["aggressive"], "anticheat": ["lenient"]}
+  },
+  "ranges": {
+    "AutoTotem": {"Danger Health": [0, 20, 1], "Re-Totem Delay (ms)": [0, 500, 0], "Danger Reaction (ms)": [0, 200, 0],
+      "Scan Delay (ms)": [0, 300, 0], "Post-Click Delay (ms)": [0, 500, 0], "Quick Pause (ms)": [0, 300, 0],
+      "Hover Delay (ms)": [0, 500, 0], "Hover Swap Delay (ms)": [0, 1000, 0], "Hover Close Delay (ms)": [0, 1000, 0]},
+    "AimAssist": {"Strength": [1, 100, 0], "Slowdown": [0, 100, 0], "Range": [1, 8, 1], "FOV": [10, 360, 0],
+      "Target Switch (ms)": [0, 1000, 0], "Weapon Settle (ms)": [0, 300, 0]},
+    "AutoMace": {"Aim Speed": [1, 100, 0], "Lock-On Wait (ms)": [0, 250, 0], "Post-Hit Delay (ms)": [0, 1000, 0],
+      "Swap Back Delay (ms)": [0, 1000, 0], "Pearl Arrival Wait (ms)": [0, 3000, 0]},
+    "BreachSwap": {"Swap Delay (ms)": [0, 15, 0], "Swap Back Delay (ms)": [0, 250, 0]},
+    "PearlCatch": {"Throw Gap (ms)": [0, 250, 0], "Swap Back Delay (ms)": [0, 300, 0]},
+    "WebEscape": {"Reaction Delay (ms)": [0, 1000, 0]},
+    "AutoHitCrystal": {"Aim Speed": [10, 72, 0], "Crystal Speed": [2, 20, 0], "Place Delay (ms)": [0, 300, 0],
+      "Break Delay (ms)": [0, 300, 0], "Switch Back Delay (ms)": [0, 500, 0]},
+    "AutoCrystal": {"Aim Speed": [10, 72, 0], "Crystal Speed": [2, 20, 0], "Place Delay (ms)": [0, 300, 0],
+      "Break Delay (ms)": [0, 300, 0], "Bob Break Delay (ms)": [0, 300, 0]},
+    "SafeAnchor": {"Aim Speed": [2, 24, 0], "Charge Delay (ms)": [0, 400, 0], "Shield Delay (ms)": [0, 400, 0],
+      "Explode Delay (ms)": [0, 400, 0]},
+    "SmartWTap": {"Reset Length (ms)": [10, 200, 0], "Start Lag (ms)": [0, 200, 0]},
+    "AutoJumpReset": {"Miss Chance %": [0, 100, 0]},
+    "HitSelect": {"Engage Odds %": [0, 100, 0], "Release Delay (ms)": [0, 200, 0]},
+    "AutoShieldBreak": {"Swap Wait (ms)": [0, 500, 0], "Swap Back Delay (ms)": [0, 1000, 0]},
+    "TriggerBot": {"Acquire Delay (ms)": [0, 1000, 0], "Extra Hit Gap (ms)": [0, 500, 0]},
+    "AntiMiss": {"Hit Chance %": [50, 100, 0]},
+    "AutoEat": {"Reaction Delay (ms)": [0, 1500, 0], "Swap Back Delay (ms)": [5, 1000, 0]},
+    "StaffDetector": {"Scan Delay (ms)": [0, 5000, 0]},
+    "AutoWeb": {"Aim Strength": [1, 100, 0], "Reaction Delay (ms)": [0, 1000, 0], "Swap Back Delay (ms)": [0, 1000, 0]},
+    "AutoWater": {"Swap Delay (ms)": [0, 40, 0], "Swap Back Delay (ms)": [0, 1000, 0], "Place Interval (ms)": [0, 1000, 0]},
+    "Clutch": {"MLG Swap Delay (ms)": [0, 300, 0], "Retract Delay (ms)": [0, 500, 0],
+      "Fire Reaction Delay (ms)": [0, 1000, 0], "Fire Pickup Delay (ms)": [0, 1000, 0]},
+    "MaceShieldDrain": {"Swap Delay (ms)": [0, 200, 0], "Swap Back Delay (ms)": [0, 500, 0]},
+    "Backtrack": {"Min Latency (ms)": [0, 500, 0], "Max Latency (ms)": [0, 500, 0]}
+  }
+}
